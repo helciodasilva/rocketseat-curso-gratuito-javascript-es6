@@ -1,9 +1,9 @@
-class Teste {
-    metodo() {
+class Matematica {
 
+    static soma(a, b) {
+        return a + b;
     }
 
-    outro() {
-        
-    }
 }
+
+console.log(Matematica.soma(1, 2));
