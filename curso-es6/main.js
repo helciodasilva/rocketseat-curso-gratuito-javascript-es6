@@ -1,14 +1,19 @@
-const usuario = {
-    nome: 'Diego',
-    idade: 23,
-    endereco: {
-        cidade: 'Rio do Sul',
-        estado: 'SC'
-    }
-};
+// REST
 
-function mostraNome({ nome, idade}) {
-    console.log(nome, idade);
+function soma(a, b, ...params) {
+    return params;
 }
 
-mostraNome(usuario);
+console.log(soma(1, 2, 3, 4, 5, 6, 7));
+
+// SPREAD
+
+const usuario1 = {
+    nome: 'Diego',
+    idade: 23,
+    empresa: 'Rocketseat'
+}
+
+const usuario2 = { ...usuario1, nome: 'Gabriel'};
+
+console.log(usuario2);
