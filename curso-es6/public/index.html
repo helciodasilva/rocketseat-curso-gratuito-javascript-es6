@@ -3,9 +3,51 @@
 <head>
     <meta charset="utf-8" />
     <title>Document</title>
+
+    <style>
+		ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		  font-family: sans-serif;
+		}
+		li {
+		  clear: both;
+		  margin-top: 20px;
+		}
+		img {
+		  width: 80px;
+		  float: left;
+		  margin-right: 10px;
+		}
+		strong {
+		  font-size: 20px;
+		}
+		p {
+		  margin: 5px 0;
+		}
+    </style>
+
 </head>
 <body>
-    <button id="novotodo">Adicionar</button>
+    <form>
+        <input type="text" name="repositor" />
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="repo-list">
+        <li>
+            <img src="https://avatars8.githubusercontent.com/u/28929274?v=4"/>
+            <strong>rocketseat.com.br</strong>
+            <p>Tire a sua ideia do papel e dê vida à sua startup </p>
+            <a target="blank" href="https://github.com/Rocketseat"></a>
+        </li>
+        <li>
+            <img src="https://avatars8.githubusercontent.com/u/28929274?v=4"/>
+            <strong>rocketseat.com.br</strong>
+            <p>Tire a sua ideia do papel e dê vida à sua startup </p>
+            <a target="blank" href="https://github.com/Rocketseat"></a>
+        </li>
+    </ul>
     <script src="./bundle.js"></script>
 </body>
 </html>
